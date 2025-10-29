@@ -1,7 +1,5 @@
-# Rolling ball and sliding paraboloid background subtraction algorithms 
+# A numpy implementation of the Rolling ball and sliding paraboloid background subtraction algorithms based on https://github.com/mbalatsko/opencv-rolling-ball transcription
 
-[![PyPI version](https://badge.fury.io/py/opencv-rolling-ball.svg)](https://badge.fury.io/py/opencv-rolling-ball)
-[![Downloads](https://pepy.tech/badge/opencv-rolling-ball)](https://pepy.tech/project/opencv-rolling-ball)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
@@ -22,7 +20,7 @@ from background.**
 ## Installation
 
 ```bash
-pip install opencv-rolling-ball
+clone to use
 ```
 
 ## Usage
