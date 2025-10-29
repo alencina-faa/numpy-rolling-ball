@@ -11,16 +11,16 @@ setup(
     packages=find_packages(),
     version='1.0.0',
     description='Now function returns both result image and subtracted background',
-	long_description=long_description,
+    long_description=long_description,
     long_description_content_type='text/markdown',
     license='MIT License',
-    author='Maksym Balatsko, adated by Alberto Lencina'
+    author='Maksym Balatsko adapted by Alberto Lencina',
     author_email='alencina@azul.faa.unicen.edu.ar',
     url='https://github.com/alencina-faa/numpy-rolling-ball',
     download_url='',
     install_requires=[
-          'numpy'
-      ],
+        'numpy'
+    ],
     keywords=['numpy', 'background subtraction', 'rolling ball algorithm'],
     classifiers=[
         'Programming Language :: Python :: 3',
@@ -32,12 +32,12 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
-		'Programming Language :: Python :: 3.8',
-		'Programming Language :: Python :: 3.9',
-		'Programming Language :: Python :: 3.10',
-		'Programming Language :: Python :: 3.11',
-		'Programming Language :: Python :: 3.12',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
         'Operating System :: OS Independent',
         'Topic :: Scientific/Engineering :: Image Recognition'
-    ],
+    ]
 )
