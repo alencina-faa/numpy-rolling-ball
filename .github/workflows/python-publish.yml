@@ -6,11 +6,23 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
+# TRUSTED PUBLISHING SETUP REQUIRED ON PyPI:
+# Before this workflow can publish, you must configure a Trusted Publisher on PyPI:
+# 1. Go to https://pypi.org/manage/project/<YOUR-PROJECT>/settings/publishing/
+#    (or https://pypi.org/manage/account/publishing/ for a pending publisher)
+# 2. Add a new publisher with the following values:
+#    - Owner:             alencina-faa
+#    - Repository name:  numpy-rolling-ball
+#    - Workflow name:    python-publish.yml
+#    - Environment name: (leave blank)
+# For more information see: https://docs.pypi.org/trusted-publishers/adding-a-publisher/
+
 name: Upload Python Package
 
 on:
   release:
     types: [published]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -28,7 +40,6 @@ jobs:
 
       - name: Build release distributions
         run: |
-          # NOTE: put your own distribution build steps here.
           python -m pip install build
           python -m build
 
@@ -45,17 +56,6 @@ jobs:
     permissions:
       # IMPORTANT: this permission is mandatory for trusted publishing
       id-token: write
-
-    # Dedicated environments with protections for publishing are strongly recommended.
-    # For more information, see: https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment#deployment-protection-rules
-    environment:
-      name: pypi
-      # OPTIONAL: uncomment and update to include your PyPI project URL in the deployment status:
-      # url: https://pypi.org/p/YOURPROJECT
-      #
-      # ALTERNATIVE: if your GitHub Release name is the PyPI project version string
-      # ALTERNATIVE: exactly, uncomment the following line instead:
-      # url: https://pypi.org/project/YOURPROJECT/${{ github.event.release.name }}
 
     steps:
       - name: Retrieve release distributions
