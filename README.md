@@ -20,7 +20,7 @@ from background.**
 ## Installation
 
 ```bash
-clone to use
+pip install numpy-rolling-ball
 ```
 
 ## Usage
