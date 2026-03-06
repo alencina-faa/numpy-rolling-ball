@@ -29,7 +29,7 @@ clone to use
 # Ejemplo A: usando PIL (Pillow)
 from PIL import Image
 import numpy as np
-from cv2_rolling_ball import subtract_background_rolling_ball
+from numpy_rolling_ball import subtract_background_rolling_ball
 
 img = np.array(Image.open('path/to/img.tif').convert('L'))  # uint8 2D
 img, background = subtract_background_rolling_ball(
@@ -40,7 +40,7 @@ img, background = subtract_background_rolling_ball(
 # (cualquier método que te entregue un array uint8 2D es válido:
 # imageio, tifffile, OpenSlide, capturas de cámara, etc.)
 import numpy as np
-from cv2_rolling_ball import subtract_background_rolling_ball
+from numpy_rolling_ball import subtract_background_rolling_ball
 
 img = np.asarray(your_uint8_grayscale_array)  # shape (H, W), dtype uint8
 img, background = subtract_background_rolling_ball(
