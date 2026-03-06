@@ -9,7 +9,7 @@ with open('README.md') as f:
 setup(
     name='numpy-rolling-ball',
     packages=find_packages(),
-    version='1.0.0',
+    version='1.0.1',
     description='Now function returns both result image and subtracted background',
     long_description=long_description,
     long_description_content_type='text/markdown',
