@@ -12,7 +12,7 @@ Imagine that the 2D grayscale image has a third (height) dimension by the image
 value at every point in the image, creating a surface. A ball of given radius
 is rolled over the bottom side of this surface; the hull of the volume
 reachable by the ball is the background.
-http://rsbweb.nih.gov/ij/developer/source/ij/plugin/filter/BackgroundSubtracter.java.html
+https://imagej.net/ij/developer/source/ij/plugin/filter/BackgroundSubtracter.java.html
 
 **This algorithms are perfect for microscope images, to distinguish particles
 from background.**
