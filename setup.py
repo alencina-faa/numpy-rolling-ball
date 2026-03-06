@@ -14,7 +14,7 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     license='MIT License',
-    author='Maksym Balatsko adapted by Alberto Lencina',
+    author='Maksym Balatsko adapted by Dr. Alberto Lencina',
     author_email='alencina@azul.faa.unicen.edu.ar',
     url='https://github.com/alencina-faa/numpy-rolling-ball',
     download_url='',
